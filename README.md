@@ -1,2 +1,100 @@
-# tamil-llama
-A New Tamil Large Language Model (LLM) Based on Llama 2
+# Tamil-Llama: A Family of LLaMA-based LLMs focused on Tamil Language
+
+![Tamil LLaMA Image](./assets/tamil-llama-cover.webp)
+
+## Description
+
+This repository contains the code and models for "Tamil-Llama", a project focused on enhancing the performance of language models for the Tamil language. It builds upon the open-source LLaMA model, introducing additional Tamil tokens and employing the LoRA methodology for efficient training. Please read the technical report for more details.
+
+Technical Report: [Will be added after publishing in arXiv]()
+
+## Table of Contents
+
+
+- [Available Models](#available-models)
+- [Datasets](#datasets)
+- [Prompting Format](#prompting-format-for-instruction-models)
+- [Usage Note](#usage-note)
+- [Contributions](#contributions)
+- [License](#license)
+- [Citation](#citation)
+- [Contact](#contact)
+
+## Available Models
+
+| Model                    | Type                        | Data              | Base Model           | # Params | Download Links                                                         |
+|--------------------------|-----------------------------|-------------------|----------------------|------|------------------------------------------------------------------------|
+| Tamil LLaMA 7B Base      | Base model                  | 12GB              | LLaMA 7B             | 7B   | [HF Hub](https://huggingface.co/abhinand/tamil-llama-7b-base-v0.1)     |
+| Tamil LLaMA 13B Base     | Base model                  | 4GB               | LLaMA 13B            | 13B  | [HF Hub](https://huggingface.co/abhinand/tamil-llama-13b-base-v0.1)    |
+| Tamil LLaMA 7B Instruct  | Instruction following model | 145k instructions | Tamil LLaMA 7B Base  | 7B   | [HF Hub](https://huggingface.co/abhinand/tamil-llama-7b-instruct-v0.1) |
+| Tamil LLaMA 13B Instruct | Instruction following model | 145k instructions | Tamil LLaMA 13B Base | 13B  | [HF Hub](abhinand/tamil-llama-13b-instruct-v0.1)                       |
+
+## Datasets
+
+The repository includes a Tamil-translated version of the Alpaca dataset and a subset of the OpenOrca dataset, which are used for instruction fine-tuning and evaluation.
+
+**Tamil Alpaca**: [abhinand/tamil-alpaca](https://huggingface.co/datasets/abhinand/tamil-alpaca)
+
+**Tamil Alpaca Orca**: [abhinand/tamil-alpaca-orca](https://huggingface.co/datasets/abhinand/tamil-alpaca-orca)
+
+**Tamil LLaMA Eval**: [abhinand/tamil-llama-eval](https://huggingface.co/datasets/abhinand/tamil-llama-eval)
+
+## Prompting Format for Instruction Models
+
+**Prompt Template Without Input**
+
+```
+{system_prompt}
+
+### Instruction:
+{instruction or query}
+
+### Response:
+{response}
+```
+
+**Prompt Template With Input**
+
+```
+{system_prompt}
+
+### Instruction:
+{instruction or query}
+
+### Input:
+{input}
+
+### Response:
+{response}
+```
+
+## Usage Note
+
+It's important to note that the models have not undergone detoxification. Therefore, while they possess impressive linguistic capabilities, there is a possibility for them to generate content that could be deemed harmful or offensive. We urge users to exercise discretion and supervise the model's outputs closely, especially in public or sensitive applications.
+
+## Contributions
+
+We welcome contributions to this project. If you have suggestions or improvements, please open an issue or a pull request.
+
+## License
+
+This project is licensed under the GNU GPT v3.0 license - see the [LICENSE.md](LICENSE) file for details.
+
+## Citation
+
+(proper info will be added once the paper is published)
+
+If you use this model or the Tamil-Llama dataset in your research, please cite:
+
+```bibtex
+@article{tamil_llama,
+  title={Tamil-Llama: A New Tamil Language Model Based on Llama 2},
+  author={Balachandran, Abhinand},
+  journal={ArXiv preprint arXiv:XXXX.XXXXX},
+  year={2023}
+}
+```
+
+## Contact
+
+For any queries regarding the codebase or research, please reach out to Abhinand Balachandran at abhinandb.ml@gmail.com.
