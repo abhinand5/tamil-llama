@@ -78,7 +78,7 @@ We welcome contributions to this project. If you have suggestions or improvement
 
 ## License
 
-This project is licensed under the GNU GPT v3.0 license - see the [LICENSE.md](LICENSE) file for details.
+This project is licensed under the GNU GPL v3.0 license - see the [LICENSE.md](LICENSE) file for details.
 
 ## Citation
 
