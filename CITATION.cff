@@ -1,0 +1,51 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: 'Tamil-Llama: A New Tamil Language Model Based on Llama 2'
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Abhinand
+    family-names: Balachandran
+    email: abhinandb.ml@gmail.com
+    orcid: 'https://orcid.org/0009-0004-9692-8432'
+identifiers:
+  - type: url
+    value: 'https://arxiv.org/abs/2311.05845'
+    description: arXiv
+repository-code: 'https://github.com/abhinand5/tamil-llama/tree/main'
+abstract: >-
+  Language modeling has witnessed remarkable advancements in
+  recent years, with Large Language Models (LLMs) like
+  ChatGPT setting unparalleled benchmarks in human-like text
+  generation. However, a prevailing limitation is the
+  underrepresentation of languages like Tamil in these
+  cutting-edge models, leading to suboptimal performance in
+  diverse linguistic contexts. This paper addresses this
+  lacuna, enhancing the open-source LLaMA model with an
+  addition of 16,000 Tamil tokens, aiming to achieve
+  superior text generation and comprehension in the Tamil
+  language. We strategically employ the LoRA methodology for
+  efficient model training on a comprehensive Tamil corpus,
+  ensuring computational feasibility and model robustness.
+  Moreover, we introduce a Tamil-translated version of the
+  Alpaca dataset and a subset of the OpenOrca dataset
+  tailored for instruction fine-tuning. Our results showcase
+  significant performance improvements in Tamil text
+  generation, with potential implications for the broader
+  landscape of LLMs in Indian languages. We further
+  underscore our commitment to open research by making our
+  models, datasets, and code publicly accessible, fostering
+  further innovations in language modeling.
+keywords:
+  - large language models
+  - natural language processing
+  - machine learning
+  - deep learning
+  - llama 2
+  - tamil language model
+license: GPL-3.0
+date-released: '2023-11-12'
