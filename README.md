@@ -1,12 +1,12 @@
 # Tamil-Llama: A Family of LLaMA-based LLMs focused on Tamil Language
 
-![Tamil LLaMA Image](./assets/tamil-llama-cover.webp)
+<img src="assets/introducing_tamil_llama.png" alt="Tamil LLaMA Image" width="300" height="auto">
 
 ## Description
 
 This repository contains the code and models for "Tamil-Llama", a project focused on enhancing the performance of language models for the Tamil language. It builds upon the open-source LLaMA model, introducing additional Tamil tokens and employing the LoRA methodology for efficient training. Please read the technical report for more details.
 
-Technical Report: [Will be added after publishing in arXiv]()
+Technical Report: [https://arxiv.org/abs/2311.05845](https://arxiv.org/abs/2311.05845)
 
 ## Table of Contents
 
@@ -82,16 +82,16 @@ This project is licensed under the GNU GPT v3.0 license - see the [LICENSE.md](L
 
 ## Citation
 
-(proper info will be added once the paper is published)
-
 If you use this model or the Tamil-Llama dataset in your research, please cite:
 
 ```bibtex
-@article{tamil_llama,
-  title={Tamil-Llama: A New Tamil Language Model Based on Llama 2},
-  author={Balachandran, Abhinand},
-  journal={ArXiv preprint arXiv:XXXX.XXXXX},
-  year={2023}
+@misc{balachandran2023tamilllama,
+      title={Tamil-Llama: A New Tamil Language Model Based on Llama 2}, 
+      author={Abhinand Balachandran},
+      year={2023},
+      eprint={2311.05845},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
 
