@@ -29,6 +29,15 @@ Technical Report: [https://arxiv.org/abs/2311.05845](https://arxiv.org/abs/2311.
 | Tamil LLaMA 7B Instruct  | Instruction following model | 145k instructions | Tamil LLaMA 7B Base  | 7B   | [HF Hub](https://huggingface.co/abhinand/tamil-llama-7b-instruct-v0.1) |
 | Tamil LLaMA 13B Instruct | Instruction following model | 145k instructions | Tamil LLaMA 13B Base | 13B  | [HF Hub](abhinand/tamil-llama-13b-instruct-v0.1)                       |
 
+## Quantized Version of Available Models
+
+| Model                    | Format | Bits                 | Download Links                                                               |
+|--------------------------|--------|----------------------|------------------------------------------------------------------------------|
+| Tamil LLaMA 7B Base      | GGUF   | Q4_K_M, Q5_K_M, Q8_0 | [HF Hub](https://huggingface.co/abhinand/tamil-llama-7b-base-v0.1-gguf)      |
+| Tamil LLaMA 13B Base     | GGUF   | Q4_K_M, Q5_K_M, Q8_0 | [HF Hub](https://huggingface.co/abhinand/tamil-llama-13b-base-v0.1-gguf)     |
+| Tamil LLaMA 7B Instruct  | GGUF   | Q4_K_M, Q5_K_M, Q8_0 | [HF Hub](https://huggingface.co/abhinand/tamil-llama-7b-instruct-v0.1-gguf)  |
+| Tamil LLaMA 13B Instruct | GGUF   | Q4_K_M, Q5_K_M, Q8_0 | [HF Hub](https://huggingface.co/abhinand/tamil-llama-13b-instruct-v0.1-gguf) |
+
 ## Datasets
 
 The repository includes a Tamil-translated version of the Alpaca dataset and a subset of the OpenOrca dataset, which are used for instruction fine-tuning and evaluation.
