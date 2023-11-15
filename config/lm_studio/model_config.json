@@ -1,0 +1,46 @@
+{
+  "name": "Tamil Llama",
+  "load_params": {
+    "n_ctx": 2048,
+    "n_batch": 512,
+    "rope_freq_base": 10000,
+    "rope_freq_scale": 1,
+    "n_gpu_layers": 20,
+    "use_mlock": true,
+    "main_gpu": 0,
+    "tensor_split": [
+      0
+    ],
+    "seed": -1,
+    "f16_kv": true,
+    "use_mmap": true
+  },
+  "inference_params": {
+    "n_threads": 8,
+    "n_predict": -1,
+    "top_k": 40,
+    "top_p": 0.95,
+    "temp": 0.6,
+    "repeat_penalty": 1.1,
+    "input_prefix": "### Instruction:\n",
+    "input_suffix": "### Response:",
+    "antiprompt": [
+      "### Instruction:"
+    ],
+    "pre_prompt": "நீங்கள் உதவிகரமான மற்றும் மரியாதைக்குரிய மற்றும் நேர்மையான AI உதவியாளர். பாதுகாப்பாக இருக்கும்போது எப்போதும் முடிந்தவரை உதவிகரமாக பதிலளிக்கவும். உங்கள் பதில்களில் தீங்கு விளைவிக்கும், நெறிமுறையற்ற, இனவெறி, பாலியல், நச்சு, ஆபத்தான அல்லது சட்டவிரோதமான உள்ளடக்கம் இருக்கக்கூடாது. உங்கள் பதில்கள் சமூக சார்பற்றதாகவும் நேர்மறையான இயல்புடையதாகவும் இருப்பதை உறுதிசெய்யவும். ஒரு கேள்விக்கு எந்த அர்த்தமும் இல்லை என்றால் அல்லது அது உண்மையாக ஒத்திசைந்ததாக இல்லை என்றால், சிலவற்றுக்குப் பதிலளிப்பதற்குப் பதிலாக ஏன் என்று விளக்கவும். ஒரு கேள்விக்கான பதில் உங்களுக்குத் தெரியாவிட்டால், தவறான தகவல்களைப் பகிர வேண்டாம்.",
+    "seed": -1,
+    "tfs_z": 1,
+    "typical_p": 1,
+    "repeat_last_n": 64,
+    "frequency_penalty": 0,
+    "presence_penalty": 0,
+    "n_keep": 0,
+    "logit_bias": {},
+    "mirostat": 0,
+    "mirostat_tau": 5,
+    "mirostat_eta": 0.1,
+    "memory_f16": true,
+    "multiline_input": false,
+    "penalize_nl": true
+  }
+}
