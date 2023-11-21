@@ -12,6 +12,7 @@ Technical Report: [https://arxiv.org/abs/2311.05845](https://arxiv.org/abs/2311.
 
 
 - [Available Models](#available-models)
+- [Demo](#demo)
 - [Datasets](#datasets)
 - [Prompting Format](#prompting-format-for-instruction-models)
 - [Usage Note](#usage-note)
@@ -29,7 +30,7 @@ Technical Report: [https://arxiv.org/abs/2311.05845](https://arxiv.org/abs/2311.
 | Tamil LLaMA 7B Instruct  | Instruction following model | 145k instructions | Tamil LLaMA 7B Base  | 7B   | [HF Hub](https://huggingface.co/abhinand/tamil-llama-7b-instruct-v0.1) |
 | Tamil LLaMA 13B Instruct | Instruction following model | 145k instructions | Tamil LLaMA 13B Base | 13B  | [HF Hub](abhinand/tamil-llama-13b-instruct-v0.1)                       |
 
-## Quantized Version of Available Models
+### Quantized Version of Available Models
 
 | Model                    | Format | Bits                 | Download Links                                                               |
 |--------------------------|--------|----------------------|------------------------------------------------------------------------------|
@@ -37,6 +38,12 @@ Technical Report: [https://arxiv.org/abs/2311.05845](https://arxiv.org/abs/2311.
 | Tamil LLaMA 13B Base     | GGUF   | Q4_K_M, Q5_K_M, Q8_0 | [HF Hub](https://huggingface.co/abhinand/tamil-llama-13b-base-v0.1-gguf)     |
 | Tamil LLaMA 7B Instruct  | GGUF   | Q4_K_M, Q5_K_M, Q8_0 | [HF Hub](https://huggingface.co/abhinand/tamil-llama-7b-instruct-v0.1-gguf)  |
 | Tamil LLaMA 13B Instruct | GGUF   | Q4_K_M, Q5_K_M, Q8_0 | [HF Hub](https://huggingface.co/abhinand/tamil-llama-13b-instruct-v0.1-gguf) |
+
+## Demo
+
+A simple interactive demo of Tamil-LLaMA-7B-Instruct-v0.1 is hosted in the HuggingFace Space here -> [abhinand/tamil-llama-playground](https://huggingface.co/spaces/abhinand/tamil-llama-playground)
+
+<img src="assets/demo_screenshot.png" alt="Tamil LLaMA Image" width="75%" height="auto">
 
 ## Datasets
 
