@@ -13,6 +13,7 @@ Technical Report: [https://arxiv.org/abs/2311.05845](https://arxiv.org/abs/2311.
 
 - [Available Models](#available-models)
 - [Demo](#demo)
+- [Getting Started](#getting-started)
 - [Datasets](#datasets)
 - [Prompting Format](#prompting-format-for-instruction-models)
 - [Usage Note](#usage-note)
@@ -44,6 +45,51 @@ Technical Report: [https://arxiv.org/abs/2311.05845](https://arxiv.org/abs/2311.
 A simple interactive demo of Tamil-LLaMA-7B-Instruct-v0.1 is hosted in the HuggingFace Space here -> [abhinand/tamil-llama-playground](https://huggingface.co/spaces/abhinand/tamil-llama-playground)
 
 <img src="assets/demo_screenshot.png" alt="Tamil LLaMA Image" width="75%" height="auto">
+
+## Getting Started
+
+### Using LMStudio:
+
+[LM Studio](https://lmstudio.ai/), an easy-to-use and powerful local GUI for Windows and macOS (Silicon), with GPU acceleration. Linux available, in beta as of 27/11/2023.
+
+1. **Download and Install LM Studio**: Begin by downloading LM Studio from the official website.
+
+2. **Locate the Tamil Llama Model**: After installation, open LM Studio and use the search bar to find the "Tamil Llama" model. Alternatively, if you have the GGUF model ID, paste it directly into the search bar.
+
+3. **Download the Appropriate Model Variant**: Depending on your system's specifications, select the appropriate variant of the Tamil Llama model. Click on the 'Download' button to start the download process.
+
+4. **Import the Preset JSON File**: Once the model is downloaded, navigate to the 'Chat' tab in LM Studio. In the settings, find the 'Preset' menu and click on the dropdown. Select "Import Preset From File" and import the preset JSON file located at [config/lm_studio/model_config.json](config/lm_studio/model_config.json) in the repository.
+
+5. **Select and Load the Model**: Click on "Select a model to load" located on the top bar. From the list, choose the Tamil Llama variant that you previously downloaded.
+
+6. **Initiate Conversations with the Model**: The Tamil Llama model is now ready to use. You can start engaging in conversations in the chat area of LM Studio.
+
+### Using with Ollama:
+
+1. **Verify Ollama Installation**: First, ensure that [Ollama](https://github.com/jmorganca/ollama) is correctly installed on your system. If not, install it from the official source.
+
+2. **Download the Modelfile**: Access the GitHub repository and download the [Modelfile](config/ollama/Modelfile). This file is necessary for setting up the Tamil Llama model in Ollama.
+
+3. **Prepare the Working Directory**: Place the downloaded `Modelfile` and the model's GGUF file in the same directory. To work in this directory, use the `cd` command in your terminal to change to the appropriate directory.
+
+4. **Download the Tamil Llama Model**: Execute the following command in your terminal to download the desired Tamil Llama model from the GitHub repository:
+
+   ```bash
+   curl -L https://huggingface.co/abhinand/tamil-llama-7b-instruct-v0.1-gguf/resolve/main/tamil-llama-7b-v0.1-q8_0.gguf -o tamil-llama.gguf
+   ```
+
+   This command downloads the Tamil Llama model GGUF file and saves it as `tamil-llama.gguf` in your current directory.
+
+5. **Import and Run the Model in Ollama**: After downloading the model, use the following command to create and run the Tamil Llama model in Ollama:
+
+   ```bash
+   ollama create tamil-llama -f Modelfile 
+   ```
+
+   This command imports the Tamil Llama model into Ollama and prepares it for use. 
+
+By following these steps, you can set up and start using the Tamil Llama model in Ollama.
+
 
 ## Datasets
 
