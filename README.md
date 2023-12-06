@@ -88,8 +88,14 @@ A simple interactive demo of Tamil-LLaMA-7B-Instruct-v0.1 is hosted in the Huggi
 
    This command imports the Tamil Llama model into Ollama and prepares it for use. 
 
-By following these steps, you can set up and start using the Tamil Llama model in Ollama.
+Optionally, depending upon your system's capabilities make sure to configure these parameters in the Modelfile too:
 
+```
+PARAMETER num_thread 8
+PARAMETER num_gpu 0
+```
+
+For more information regarding the Modelfile's available parameters check out the [official docs](https://github.com/jmorganca/ollama/blob/main/docs/modelfile.md).
 
 ## Datasets
 
