@@ -12,6 +12,7 @@ Technical Report: [https://arxiv.org/abs/2311.05845](https://arxiv.org/abs/2311.
 
 
 - [Available Models](#available-models)
+- [Benchmark Scores](#benchmark-scores)
 - [Demo](#demo)
 - [Getting Started](#getting-started)
 - [Datasets](#datasets)
@@ -39,6 +40,19 @@ Technical Report: [https://arxiv.org/abs/2311.05845](https://arxiv.org/abs/2311.
 | Tamil LLaMA 13B Base     | GGUF   | Q4_K_M, Q5_K_M, Q8_0 | [HF Hub](https://huggingface.co/abhinand/tamil-llama-13b-base-v0.1-gguf)     |
 | Tamil LLaMA 7B Instruct  | GGUF   | Q4_K_M, Q5_K_M, Q8_0 | [HF Hub](https://huggingface.co/abhinand/tamil-llama-7b-instruct-v0.1-gguf)  |
 | Tamil LLaMA 13B Instruct | GGUF   | Q4_K_M, Q5_K_M, Q8_0 | [HF Hub](https://huggingface.co/abhinand/tamil-llama-13b-instruct-v0.1-gguf) |
+
+## Benchmark Scores
+
+Scores are calculated using the HuggingFace [Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard).
+
+> **Note:** The benchmarks test the model's capabilities in English reasoning, although the Tamil LLaMA models were not trained on quality reasoning tasks in English it shows decent performance across most benchmarks.
+
+| Model                    | Average | ARC   | HellaSwag | MMLU  | TruthfulQA | Winogrande | GSM8K |
+|--------------------------|---------|-------|-----------|-------|------------|------------|-------|
+| Tamil LLaMA 13B Instruct | **51.59**   | **54.52** | 79.35     | 50.37 | 41.22      | **76.56**      | **7.51**  |
+| Tamil LLaMA 13B Base     | 49.5    | 52.82 | **79.95**     | **52.05** | 36.56      | 75.61      | 0     |
+| Tamil LLaMA 7B Instruct  | 45.52   | 48.04 | 70.97     | 39.95 | **41.7**       | 70.64      | 1.82  |
+| Tamil LLaMA 7B Base      | 44.52   | 46.67 | 72.85     | 40.95 | 35.93      | 70.72      | 0     |
 
 ## Demo
 
