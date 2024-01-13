@@ -162,6 +162,8 @@ We welcome contributions to this project. If you have suggestions or improvement
 
 This project is licensed under the GNU GPL v3.0 license - see the [LICENSE.md](LICENSE) file for details.
 
+> **IMPORTANT**: The [GPL 3.0 License](LICENSE) is applicable solely to the source code and datasets provided. As this project is a derivative of Meta's LLaMA 2 model, it is subject to the original licensing of LLaMA 2, which cannot be altered. Therefore, for comprehensive details regarding the licensing of the model, please consult the [LLAMA2-LICENSE](LLAMA2-LICENSE) file.
+
 ## Citation
 
 If you use this model or the Tamil-Llama dataset in your research, please cite:
