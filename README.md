@@ -12,6 +12,20 @@ If you appreciate this work and would like to support its continued development,
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/abhinand.b)
 
+## Updates
+
+**[Jan 23, 2024]** 
+
+For more details, please read the detailed blog post [here]().
+
+- Tamil LLaMA v0.2 models are out. It is a significant upgrade compared to the earlier version.
+   - Tamil LLaMA is now bilingual, it can fluently respond in both English and Tamil.
+   - Better tokenizer.
+   - Better base model.
+   - Better fine tuning dataset and performance.
+   - Our models match or betters the performance of Meta's LLaMA 2 is almost all the benchmarks.
+- Following the same methodology the first ever Telugu and Malayam LLaMA models are also released.
+
 ## Table of Contents
 
 
