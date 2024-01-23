@@ -8,6 +8,10 @@ This repository contains the code and models for "Tamil-Llama", a project focuse
 
 Technical Report: [https://arxiv.org/abs/2311.05845](https://arxiv.org/abs/2311.05845)
 
+If you appreciate this work and would like to support its continued development, consider [buying me a coffee](https://www.buymeacoffee.com/abhinand.b). Your support is invaluable and greatly appreciated.
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/abhinand.b)
+
 ## Table of Contents
 
 
