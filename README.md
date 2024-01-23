@@ -16,7 +16,7 @@ If you appreciate this work and would like to support its continued development,
 
 **[Jan 23, 2024]** 
 
-For more details, please read the detailed blog post [here]().
+For more details, please read the detailed blog post [here](https://abhinand05.medium.com/breaking-language-barriers-introducing-tamil-llama-v0-2-and-its-expansion-to-telugu-and-malayalam-deb5d23e9264).
 
 - Tamil LLaMA v0.2 models are out. It is a significant upgrade compared to the earlier version.
    - Tamil LLaMA is now bilingual, it can fluently respond in both English and Tamil.
