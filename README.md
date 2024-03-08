@@ -1,14 +1,14 @@
-# Tamil-Llama: A Family of LLaMA-based LLMs focused on Tamil Language
+# Tamil-Llama: A Family of LLaMA-based LLMs focused on the Tamil Language
 
 <img src="assets/introducing_tamil_llama.png" alt="Tamil LLaMA Image" width="300" height="auto">
 
 ## Description
 
-This repository contains the code and models for "Tamil-Llama", a project focused on enhancing the performance of language models for the Tamil language. It builds upon the open-source LLaMA model, introducing additional Tamil tokens and employing the LoRA methodology for efficient training. Please read the technical report for more details.
+This repository contains the code and models for "Tamil-Llama", a project focused on enhancing the performance of language models for the Tamil language. It builds upon the open-source LLaMA model, introducing additional Tamil tokens and employing the LoRA methodology for efficient training. Please take a look at the technical report for more details.
 
 Technical Report: [https://arxiv.org/abs/2311.05845](https://arxiv.org/abs/2311.05845)
 
-If you appreciate this work and would like to support its continued development, consider [buying me a coffee](https://www.buymeacoffee.com/abhinand.b). Your support is invaluable and greatly appreciated.
+If you appreciate this work and want to support its continued development, consider [buying me a coffee](https://www.buymeacoffee.com/abhinand.b). Your support is invaluable and greatly appreciated.
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/abhinand.b)
 
@@ -19,12 +19,12 @@ If you appreciate this work and would like to support its continued development,
 For more details, please read the detailed blog post [here](https://abhinand05.medium.com/breaking-language-barriers-introducing-tamil-llama-v0-2-and-its-expansion-to-telugu-and-malayalam-deb5d23e9264).
 
 - Tamil LLaMA v0.2 models are out. It is a significant upgrade compared to the earlier version.
-   - Tamil LLaMA is now bilingual, it can fluently respond in both English and Tamil.
+   - Tamil LLaMA is now bilingual and can respond fluently in both English and Tamil.
    - Better tokenizer.
    - Better base model.
-   - Better fine tuning dataset and performance.
-   - Our models match or betters the performance of Meta's LLaMA 2 is almost all the benchmarks.
-- Following the same methodology the first ever Telugu and Malayam LLaMA models are also released.
+   - Better fine-tuning dataset and performance.
+   - Our models match or better the performance of Meta's LLaMA 2 in almost all the benchmarks.
+- The first-ever Telugu and Malayalam LLaMA models have also been released following the same methodology.
 
 ## Table of Contents
 
@@ -63,7 +63,7 @@ For more details, please read the detailed blog post [here](https://abhinand05.m
 
 Scores are calculated using the HuggingFace [Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard).
 
-> **Note:** The benchmarks test the model's capabilities in English reasoning, although the Tamil LLaMA models were not trained on quality reasoning tasks in English it shows decent performance across most benchmarks.
+> **Note:** The benchmarks test the model's capabilities in English reasoning; although the Tamil LLaMA models were not trained on quality reasoning tasks in English, they show decent performance across most benchmarks.
 
 | Model                    | Average | ARC   | HellaSwag | MMLU  | TruthfulQA | Winogrande | GSM8K |
 |--------------------------|---------|-------|-----------|-------|------------|------------|-------|
@@ -82,19 +82,19 @@ A simple interactive demo of Tamil-LLaMA-7B-Instruct-v0.1 is hosted in the Huggi
 
 ### Using LMStudio:
 
-[LM Studio](https://lmstudio.ai/), an easy-to-use and powerful local GUI for Windows and macOS (Silicon), with GPU acceleration. Linux available, in beta as of 27/11/2023.
+[LM Studio](https://lmstudio.ai/) is an easy-to-use and powerful local GUI for Windows and macOS (Silicon) with GPU acceleration. Linux is available, and it is in beta as of 27/11/2023.
 
-1. **Download and Install LM Studio**: Begin by downloading LM Studio from the official website.
+1. **Download and Install LM Studio**: Download LM Studio from the official website.
 
-2. **Locate the Tamil Llama Model**: After installation, open LM Studio and use the search bar to find the "Tamil Llama" model. Alternatively, if you have the GGUF model ID, paste it directly into the search bar.
+2. **Locate the Tamil Llama Model**: After installation, open LM Studio and use the search bar to find the "Tamil Llama" model. If you have the GGUF model ID, you can paste it directly into the search bar.
 
-3. **Download the Appropriate Model Variant**: Depending on your system's specifications, select the appropriate variant of the Tamil Llama model. Click on the 'Download' button to start the download process.
+3. **Download the Appropriate Model Variant**: Select the appropriate variant of the Tamil Llama model depending on your system's specifications. Click on the 'Download' button to start the download process.
 
 4. **Import the Preset JSON File**: Once the model is downloaded, navigate to the 'Chat' tab in LM Studio. In the settings, find the 'Preset' menu and click on the dropdown. Select "Import Preset From File" and import the preset JSON file located at [config/lm_studio/model_config.json](config/lm_studio/model_config.json) in the repository.
 
-5. **Select and Load the Model**: Click on "Select a model to load" located on the top bar. From the list, choose the Tamil Llama variant that you previously downloaded.
+5. **Select and Load the Model**: Click "Select a model to load" on the top bar. You can choose the Tamil Llama variant you downloaded from the list.
 
-6. **Initiate Conversations with the Model**: The Tamil Llama model is now ready to use. You can start engaging in conversations in the chat area of LM Studio.
+6. **Initiate Conversations with the Model**: The Tamil Llama model is now ready. You can start engaging in conversations in the chat area of LM Studio.
 
 ### Using with Ollama:
 
@@ -120,14 +120,14 @@ A simple interactive demo of Tamil-LLaMA-7B-Instruct-v0.1 is hosted in the Huggi
 
    This command imports the Tamil Llama model into Ollama and prepares it for use. 
 
-Optionally, depending upon your system's capabilities make sure to configure these parameters in the Modelfile too:
+Optionally, depending upon your system's capabilities, make sure to configure these parameters in the Modelfile too:
 
 ```
 PARAMETER num_thread 8
 PARAMETER num_gpu 0
 ```
 
-For more information regarding the Modelfile's available parameters check out the [official docs](https://github.com/jmorganca/ollama/blob/main/docs/modelfile.md).
+For more information regarding the Modelfile's available parameters, check out the [official docs](https://github.com/jmorganca/ollama/blob/main/docs/modelfile.md).
 
 ## Datasets
 
@@ -170,7 +170,7 @@ The repository includes a Tamil-translated version of the Alpaca dataset and a s
 
 ## Usage Note
 
-It's important to note that the models have not undergone detoxification. Therefore, while they possess impressive linguistic capabilities, there is a possibility for them to generate content that could be deemed harmful or offensive. We urge users to exercise discretion and supervise the model's outputs closely, especially in public or sensitive applications.
+It's important to note that the models have not undergone detoxification. Therefore, while they possess impressive linguistic capabilities, they could generate content that could be deemed harmful or offensive. We urge users to exercise discretion and closely supervise the model's outputs, especially in public or sensitive applications.
 
 ## Contributions
 
@@ -180,13 +180,13 @@ We welcome contributions to this project. If you have suggestions or improvement
 
 This project is licensed under the GNU GPL v3.0 license - see the [LICENSE.md](LICENSE) file for details.
 
-> **IMPORTANT**: The [GPL 3.0 License](LICENSE) is applicable solely to the source code and datasets provided. As this project is a derivative of Meta's LLaMA 2 model, it is subject to the original licensing of LLaMA 2, which cannot be altered. Therefore, for comprehensive details regarding the licensing of the model, please consult the [LLAMA2-LICENSE](LLAMA2-LICENSE) file.
+> **IMPORTANT**: The [GPL 3.0 License] (LICENSE) applies solely to the source code and datasets provided. As this project is a derivative of Meta's LLaMA 2 model, it is subject to the original licensing of LLaMA 2, which cannot be altered. So, for comprehensive details regarding the model's licensing, please look at the [LLAMA2-LICENSE](LLAMA2-LICENSE) file.
 
 ## Citation
 
 If you use this model or the Tamil-Llama dataset in your research, please cite:
 
-```bibtex
+```BibTeX
 @misc{balachandran2023tamilllama,
       title={Tamil-Llama: A New Tamil Language Model Based on Llama 2}, 
       author={Abhinand Balachandran},
@@ -199,4 +199,4 @@ If you use this model or the Tamil-Llama dataset in your research, please cite:
 
 ## Contact
 
-For any queries regarding the codebase or research, please reach out to Abhinand Balachandran at abhinandb.ml@gmail.com.
+If you have any questions about the codebase or research, please contact Abhinand Balachandran at abhinandb.ml@gmail.com.
