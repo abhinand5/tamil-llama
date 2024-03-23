@@ -14,7 +14,23 @@ If you appreciate this work and would like to support its continued development,
 
 ## Updates
 
-**[Jan 23, 2024]** 
+### Feb 25, 2024
+
+Google's Gemma 2B Model was adapter for Tamil (Experimental Release) based on the same framework with a few changes. More info in [this](https://www.linkedin.com/posts/abhinand-05_%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F-%3F%3F-activity-7167767094619430912-VspR?utm_source=share&utm_medium=member_desktop) LinkedIn post.
+
+> **Note:** I have migrated to [Llama-Factory](https://github.com/hiyouga/LLaMA-Factory) for pretraining and [Axolotl](https://github.com/OpenAccess-AI-Collective/axolotl) for finetuning.
+
+- No expansion in vocab for Gemma as it already has 256k vocab size and minnescule amounts of Tamil tokens.
+- Continually pretrain on all available Tamil Wikipedia data for 3 epochs.
+- Finetune on Tamil Alpaca + English Alpaca mix for 5 epochs
+- Model tops Open LLM Leaderboard for models under 3B params as of Feb 2023.
+
+**Download Links:**
+
+- [Tamil Gemma 2B Alpha](https://huggingface.co/abhinand/gemma-2b-it-tamil-v0.1-alpha) 
+- [Tamil Gemma 2B Alpha GGUF](https://huggingface.co/abhinand/gemma-2b-it-tamil-v0.1-alpha-GGUF)
+
+### Jan 23, 2024 
 
 For more details, please read the detailed blog post [here](https://abhinand05.medium.com/breaking-language-barriers-introducing-tamil-llama-v0-2-and-its-expansion-to-telugu-and-malayalam-deb5d23e9264).
 
