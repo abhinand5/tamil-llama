@@ -90,6 +90,8 @@ Scores are calculated using the HuggingFace [Open LLM Leaderboard](https://huggi
 
 ## Demo
 
+> **Update:** There is now a Google Colab demo for Tamil/Telugu/Malayalam LLaMAs part of this project. [Click Here](https://colab.research.google.com/drive/11_RHZim_HubD2NskxSwq4X_NW4XlnrtS?usp=sharing) to open the Colab Notebook.
+
 A simple interactive demo of Tamil-LLaMA-7B-Instruct-v0.1 is hosted in the HuggingFace Space here -> [abhinand/tamil-llama-playground](https://huggingface.co/spaces/abhinand/tamil-llama-playground)
 
 <img src="assets/demo_screenshot.png" alt="Tamil LLaMA Image" width="75%" height="auto">
